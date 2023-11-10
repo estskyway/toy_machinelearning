@@ -25,8 +25,12 @@ import pickle
 def mlmodelwithregression(data:dict) : # json
     print('data with dict {}'.format(data))
     # data dict to 변수 활당
-    texture_mean = float(data['texture_mean'])
-    perimeter_mean = float(data['perimeter_mean'])
+    texture_mean = float(data['통증기간(월)'])
+    perimeter_mean = float(data['헤모글로빈수치'])
+    perimeter_mean = float(data['연령'])
+    perimeter_mean = float(data['입원기간'])
+    perimeter_mean = float(data['흡연여부'])
+    perimeter_mean = float(data['고혈압여부'])
 
     # pkl 파일 존재 확인 코드 필요
 
